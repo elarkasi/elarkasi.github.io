@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>凭风欲上九重楼</title>
+    <link>https://blog.alex4u.win/</link>
+    <description>Recent content on 凭风欲上九重楼</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Apr 2020 12:37:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.alex4u.win/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关闭unifi AP未授权设备接入guest网络</title>
+      <link>https://blog.alex4u.win/post/uap-ac-offline-guest-forbid-policy/</link>
+      <pubDate>Mon, 20 Apr 2020 12:37:34 +0800</pubDate>
+      
+      <guid>https://blog.alex4u.win/post/uap-ac-offline-guest-forbid-policy/</guid>
+      <description>修改UAP安全策略，在AC下线后禁止Guest登录 # 查看当前UAP config.selfrun_guest_mode的配置 # 默认配置下 config.selfrun_guest_mode = pass，AC下线后允许未授权客户端接入 cat cfg/mgmt 修改该配置 # V5版本的AC controller配置文件路径 # &amp;lt;unifi_base&amp;gt;/data/sites/sitename/config.properties # 如果没有找到该文件，可以新建 echo &amp;#34;config.selfrun_guest_mode=off&amp;#34; &amp;gt; config.properties 保存退出，在管理页面下发配置 </description>
+    </item>
+    
+    <item>
+      <title>Iperf3</title>
+      <link>https://blog.alex4u.win/post/iperf3/</link>
+      <pubDate>Sun, 19 Apr 2020 17:14:27 +0800</pubDate>
+      
+      <guid>https://blog.alex4u.win/post/iperf3/</guid>
+      <description>iperf官网 点这里 服务端： #默认端口号5201 #默认TCP链接 #-p 指定端口号 #-b 指定带宽 #-u 指定UDP协议 iperf3 -s 客户端： #-i 输出间隔 #-t 持续时间 #-p 服务端端口号 #-P 并发连接数 iperf3 -c server-ip -i 10 -t 600 </description>
+    </item>
+    
+    <item>
+      <title>常用汽车部件中英对照</title>
+      <link>https://blog.alex4u.win/post/english-auto/</link>
+      <pubDate>Sun, 19 Apr 2020 12:21:13 +0800</pubDate>
+      
+      <guid>https://blog.alex4u.win/post/english-auto/</guid>
+      <description> valve cover gasket 气门室密封盖垫 oil pan 发动机油底壳 oil filter 机油滤芯 windshield 挡风玻璃 wiper 雨刷 wiper blade 雨刷条 fender 翼子板 power steering fluid 转向机油 brake fluid 刹车油 brake fluid reservoir 刹车油壶 brake disc/rotor 刹车盘 brake pad 刹车片 brake caliper 刹车卡钳 brake caliper bracket 刹车卡钳支架 rear tire 后轮 front tire 前轮 trunk 后备箱/行李箱 pulley 从动轮 tensioner 涨紧轮 belt 皮带 alternator 发电机 starter 起动机 ac comporessor 空调压缩机 ac clutch 空调压缩机离合片 ac condenser 空调冷凝箱 ac evaporator core 空调蒸发箱 bearing 轴承 spark plug 火花塞 ignition coil 点火线圈 fuel injector 喷油嘴 oxygen sensor 氧传感器 differential 差速器 clutch 离合器 dip stick 机油尺 fog light 雾灯 fuel pump 燃油泵 fuel cap 邮箱盖 fuel gauge 油表 moon roof 天窗 tail light 尾灯 trailer 拖车 floor mat 地垫 cruise control 自动巡航 </description>
+    </item>
+    
+    <item>
+      <title>部署KMS Server</title>
+      <link>https://blog.alex4u.win/post/kms-server/</link>
+      <pubDate>Sun, 19 Apr 2020 11:18:51 +0800</pubDate>
+      
+      <guid>https://blog.alex4u.win/post/kms-server/</guid>
+      <description>KMS server可以部署在不同的客户端上，比如NAS，手机，树莓派，电视盒子之类的设备，方便局域网内网激活使用。
+很简单的几条命令，用树莓派做例子
+# 拉取docker镜像 docker pull elarkasi/raspi-kms:latest # 运行 docker run -d -p 1688:1688 --restart=unless-stopped elarkasi/raspi-kms:latest 如需利用windows的自动激活功能，需要在路由器上加入以下配置
+# 替换hostname,domainname为现有设定 srv-host=_vlmcs._tcp.domainname,hostname.domainname,1688,0,100 不知道怎么使用KMS命令激活? 点这里</description>
+    </item>
+    
+    <item>
+      <title>KMS 激活命令</title>
+      <link>https://blog.alex4u.win/post/kms/</link>
+      <pubDate>Sat, 18 Apr 2020 13:20:10 +0800</pubDate>
+      
+      <guid>https://blog.alex4u.win/post/kms/</guid>
+      <description>快速跳转: Windows | Office 备注： 需要管理员权限运行Powershell Windows KMS   查看系统版本 wmic os get caption   设置kms服务器 slmgr /skms 192.168.0.1   安装key | [ 需要Key? 点这里： Windows ] slmgr /ipk xxxx-xxxx-xxxx-xxxx   激活 slmgr /ato   Office KMS   设置kms服务器 #32位 cd c:\Program Files (x86)\Microsoft Office\Office16\ #64位 cd c:\Program Files\Microsoft Office\Office16\ #运行 cscript ospp.vbs /sethst:192.168.0.1   安装key | [ 需要Key? 点这里：Office2019/2016 | Office2013 | Office2010 ] cscript ospp.</description>
+    </item>
+    
+    <item>
+      <title>Hello Hugo</title>
+      <link>https://blog.alex4u.win/post/hello-hugo/</link>
+      <pubDate>Sat, 18 Apr 2020 10:11:13 +0800</pubDate>
+      
+      <guid>https://blog.alex4u.win/post/hello-hugo/</guid>
+      <description> ✉ Greeting from 九重楼 </description>
+    </item>
+    
+  </channel>
+</rss>

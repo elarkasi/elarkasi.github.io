@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kms on 凭风欲上九重楼</title>
+    <link>https://blog.alex4u.win/tags/kms/</link>
+    <description>Recent content in kms on 凭风欲上九重楼</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 19 Apr 2020 11:18:51 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.alex4u.win/tags/kms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>部署KMS Server</title>
+      <link>https://blog.alex4u.win/post/kms-server/</link>
+      <pubDate>Sun, 19 Apr 2020 11:18:51 +0800</pubDate>
+      
+      <guid>https://blog.alex4u.win/post/kms-server/</guid>
+      <description>KMS server可以部署在不同的客户端上，比如NAS，手机，树莓派，电视盒子之类的设备，方便局域网内网激活使用。
+很简单的几条命令，用树莓派做例子
+# 拉取docker镜像 docker pull elarkasi/raspi-kms:latest # 运行 docker run -d -p 1688:1688 --restart=unless-stopped elarkasi/raspi-kms:latest 如需利用windows的自动激活功能，需要在路由器上加入以下配置
+# 替换hostname,domainname为现有设定 srv-host=_vlmcs._tcp.domainname,hostname.domainname,1688,0,100 不知道怎么使用KMS命令激活? 点这里</description>
+    </item>
+    
+    <item>
+      <title>KMS 激活命令</title>
+      <link>https://blog.alex4u.win/post/kms/</link>
+      <pubDate>Sat, 18 Apr 2020 13:20:10 +0800</pubDate>
+      
+      <guid>https://blog.alex4u.win/post/kms/</guid>
+      <description>快速跳转: Windows | Office 备注： 需要管理员权限运行Powershell Windows KMS   查看系统版本 wmic os get caption   设置kms服务器 slmgr /skms 192.168.0.1   安装key | [ 需要Key? 点这里： Windows ] slmgr /ipk xxxx-xxxx-xxxx-xxxx   激活 slmgr /ato   Office KMS   设置kms服务器 #32位 cd c:\Program Files (x86)\Microsoft Office\Office16\ #64位 cd c:\Program Files\Microsoft Office\Office16\ #运行 cscript ospp.vbs /sethst:192.168.0.1   安装key | [ 需要Key? 点这里：Office2019/2016 | Office2013 | Office2010 ] cscript ospp.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blog.alex4u.win/post/</loc>
+    <lastmod>2020-04-20T12:37:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/tags/</loc>
+    <lastmod>2020-04-20T12:37:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/tags/unifi/</loc>
+    <lastmod>2020-04-20T12:37:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/post/uap-ac-offline-guest-forbid-policy/</loc>
+    <lastmod>2020-04-20T12:37:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/</loc>
+    <lastmod>2020-04-20T12:37:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/post/iperf3/</loc>
+    <lastmod>2020-04-19T17:14:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/tags/network/</loc>
+    <lastmod>2020-04-19T17:14:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/tags/english/</loc>
+    <lastmod>2020-04-19T12:21:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/post/english-auto/</loc>
+    <lastmod>2020-04-19T12:21:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/tags/kms/</loc>
+    <lastmod>2020-04-19T11:18:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/post/kms-server/</loc>
+    <lastmod>2020-04-19T11:18:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/post/kms/</loc>
+    <lastmod>2020-04-18T13:20:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/post/hello-hugo/</loc>
+    <lastmod>2020-04-18T10:11:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alex4u.win/categories/</loc>
+  </url>
+  
+</urlset>
