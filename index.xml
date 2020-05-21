@@ -23,8 +23,8 @@
   定制配置文件 : 配置文件
 点击上面的连接，进入配置页，在页面下方点击创建新的配置，选择好你需要的安装项目和安装配置后，点击页面右上角导出按钮就可以保存一份配置好的Configuration.xml文件，将它放到和setup相同的文件夹内
   开始安装 在powershell管理员模式下进入到setup文件目录
-1. 下载安装文件(如果你没有安装介质) setup.exe /download Configuration.xml 这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考安装工具页面的详细介绍
-2. 安装 setup.exe /configure Configuration.xml 完成后就可以激活office了，如果不知道怎么激活office,请阅读我的KMS激活介绍</description>
+1. 下载安装文件(如果你没有安装介质) .\setup.exe /download Configuration.xml 这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考安装工具页面的详细介绍
+2. 安装 .\setup.exe /configure Configuration.xml 完成后就可以激活office了，如果不知道怎么激活office,请阅读我的KMS激活介绍</description>
     </item>
     
     <item>

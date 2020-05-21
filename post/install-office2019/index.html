@@ -18,8 +18,8 @@
   定制配置文件 : 配置文件
 点击上面的连接，进入配置页，在页面下方点击创建新的配置，选择好你需要的安装项目和安装配置后，点击页面右上角导出按钮就可以保存一份配置好的Configuration.xml文件，将它放到和setup相同的文件夹内
   开始安装 在powershell管理员模式下进入到setup文件目录
-1. 下载安装文件(如果你没有安装介质) setup.exe /download Configuration.xml 这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考安装工具页面的详细介绍
-2. 安装 setup.exe /configure Configuration.xml 完成后就可以激活office了，如果不知道怎么激活office,请阅读我的KMS激活介绍"/>
+1. 下载安装文件(如果你没有安装介质) .\setup.exe /download Configuration.xml 这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考安装工具页面的详细介绍
+2. 安装 .\setup.exe /configure Configuration.xml 完成后就可以激活office了，如果不知道怎么激活office,请阅读我的KMS激活介绍"/>
 
     <meta property="og:title" content="安装 Office2019" />
 <meta property="og:description" content="Office 2019不再提供安装向导，现在自定义安装项需要利用配置文件和安装工具通过命令行安装
@@ -28,8 +28,8 @@
   定制配置文件 : 配置文件
 点击上面的连接，进入配置页，在页面下方点击创建新的配置，选择好你需要的安装项目和安装配置后，点击页面右上角导出按钮就可以保存一份配置好的Configuration.xml文件，将它放到和setup相同的文件夹内
   开始安装 在powershell管理员模式下进入到setup文件目录
-1. 下载安装文件(如果你没有安装介质) setup.exe /download Configuration.xml 这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考安装工具页面的详细介绍
-2. 安装 setup.exe /configure Configuration.xml 完成后就可以激活office了，如果不知道怎么激活office,请阅读我的KMS激活介绍" />
+1. 下载安装文件(如果你没有安装介质) .\setup.exe /download Configuration.xml 这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考安装工具页面的详细介绍
+2. 安装 .\setup.exe /configure Configuration.xml 完成后就可以激活office了，如果不知道怎么激活office,请阅读我的KMS激活介绍" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.alex4u.win/post/install-office2019/" />
 <meta property="article:published_time" content="2020-05-21T12:57:25+08:00" />
@@ -84,20 +84,21 @@
 <li>
 <p>安装工具的下载地址 : <a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">安装工具</a></p>
 <p>安装工具下载好了之后可以解压或者直接双击安装，它会释放一个可执行的程序Setup和示例配置文件(后缀是xml)，可以将所有示例配置文件删除，我们只需要用到配置页面生成的文件</p>
+<p><img src="https://img-blog.csdnimg.cn/20191221183135906.png" alt="1"></p>
 </li>
 <li>
 <p>定制配置文件 : <a href="https://config.office.com/">配置文件</a></p>
 <p>点击上面的连接，进入配置页，在页面下方点击创建新的配置，选择好你需要的安装项目和安装配置后，点击页面右上角导出按钮就可以保存一份配置好的Configuration.xml文件，将它放到和setup相同的文件夹内</p>
-<!-- raw HTML omitted -->
+<p><img src="https://img-blog.csdnimg.cn/20191221183922920.png" alt="2"></p>
 </li>
 </ol>
 <h4 id="开始安装">开始安装</h4>
 <p>在powershell管理员模式下进入到setup文件目录</p>
 <h5 id="1-下载安装文件如果你没有安装介质">1. 下载安装文件(如果你没有安装介质)</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  setup.exe /download Configuration.xml
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  .\setup.exe /download Configuration.xml
 </code></pre></div><p>这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考<a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">安装工具</a>页面的详细介绍</p>
 <h5 id="2-安装">2. 安装</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  setup.exe /configure Configuration.xml
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  .\setup.exe /configure Configuration.xml
 </code></pre></div><p>完成后就可以激活office了，如果不知道怎么激活office,请阅读我的<a href="https://blog.alex4u.win/post/kms/">KMS激活</a>介绍</p>
 
     </div>
