@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <title>安装 office2019 // 凭风欲上九重楼</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="九重楼" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://blog.alex4u.win/css/main.min.91bb190ff2b84410aa827d4f7cfe3a50ad6e80e45152b1432a9d32af7a0f6d09.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="安装 office2019"/>
+<meta name="twitter:description" content="安装 Office2019 准备工作   安装工具的下载地址 : 安装工具
+安装工具下载好了之后可以解压或者直接双击安装，它会释放一个可执行的程序Setup和示例配置文件(后缀是xml)，可以将所有示例配置文件删除，我们只需要用到配置页面生成的文件
+  定制配置文件 : 配置文件
+点击上面的连接，进入配置页，在页面下方点击创建新的配置，选择好你需要的安装项目和安装配置后，点击页面右上角导出按钮就可以保存一份配置好的Configuration.xml文件，将它放到和setup相同的文件夹内
+  开始安装 在powershell管理员模式下进入到setup文件目录
+1. 下载安装文件(如果你没有安装介质) .\setup.exe /download Configuration.xml 这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考安装工具页面的详细介绍
+2. 安装 .\setup.exe /configure Configuration.xml 完成后就可以激活office了，如果不知道怎么激活office,请阅读我的KMS激活介绍"/>
+
+    <meta property="og:title" content="安装 office2019" />
+<meta property="og:description" content="安装 Office2019 准备工作   安装工具的下载地址 : 安装工具
+安装工具下载好了之后可以解压或者直接双击安装，它会释放一个可执行的程序Setup和示例配置文件(后缀是xml)，可以将所有示例配置文件删除，我们只需要用到配置页面生成的文件
+  定制配置文件 : 配置文件
+点击上面的连接，进入配置页，在页面下方点击创建新的配置，选择好你需要的安装项目和安装配置后，点击页面右上角导出按钮就可以保存一份配置好的Configuration.xml文件，将它放到和setup相同的文件夹内
+  开始安装 在powershell管理员模式下进入到setup文件目录
+1. 下载安装文件(如果你没有安装介质) .\setup.exe /download Configuration.xml 这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考安装工具页面的详细介绍
+2. 安装 .\setup.exe /configure Configuration.xml 完成后就可以激活office了，如果不知道怎么激活office,请阅读我的KMS激活介绍" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.alex4u.win/post/install-office2019/" />
+<meta property="article:published_time" content="2020-05-21T17:14:27+08:00" />
+<meta property="article:modified_time" content="2020-05-21T17:14:27+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://blog.alex4u.win"><img class="app-header-avatar" src="/avatar.jpg" alt="九重楼" /></a>
+      <h3>凭风欲上九重楼</h3>
+      <p>elarkasi</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/elarkasi" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://instagram.com/elarkasi" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-instagram">
+  <title>instagram</title>
+  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">安装 office2019</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          2020-05-21
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://blog.alex4u.win/tags/office/">office</a></div></div>
+    </header>
+    <div class="post-content">
+      <h1 id="安装-office2019">安装 Office2019</h1>
+<h4 id="准备工作">准备工作</h4>
+<ol>
+<li>
+<p>安装工具的下载地址 : <a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">安装工具</a></p>
+<p>安装工具下载好了之后可以解压或者直接双击安装，它会释放一个可执行的程序Setup和示例配置文件(后缀是xml)，可以将所有示例配置文件删除，我们只需要用到配置页面生成的文件</p>
+<p><img src="https://img-blog.csdnimg.cn/20191221183135906.png" alt="1"></p>
+</li>
+<li>
+<p>定制配置文件 : <a href="https://config.office.com/">配置文件</a></p>
+<p>点击上面的连接，进入配置页，在页面下方点击创建新的配置，选择好你需要的安装项目和安装配置后，点击页面右上角导出按钮就可以保存一份配置好的Configuration.xml文件，将它放到和setup相同的文件夹内</p>
+<p><img src="https://img-blog.csdnimg.cn/20191221183922920.png" alt="2"></p>
+</li>
+</ol>
+<h4 id="开始安装">开始安装</h4>
+<p>在powershell管理员模式下进入到setup文件目录</p>
+<h5 id="1-下载安装文件如果你没有安装介质">1. 下载安装文件(如果你没有安装介质)</h5>
+<pre><code class="language-{style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"}" data-lang="{style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"}">  .\setup.exe /download Configuration.xml
+</code></pre><p>这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考<a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">安装工具</a>页面的详细介绍</p>
+<h5 id="2-安装">2. 安装</h5>
+<pre><code class="language-{style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"}" data-lang="{style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"}">  .\setup.exe /configure Configuration.xml
+</code></pre><p>完成后就可以激活office了，如果不知道怎么激活office,请阅读我的<a href="https://blog.alex4u.win/post/kms/">KMS激活</a>介绍</p>
+
+    </div>
+    <div class="post-footer">
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "elarkasi-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
