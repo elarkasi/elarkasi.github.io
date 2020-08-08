@@ -17,7 +17,7 @@
       <pubDate>Sun, 19 Apr 2020 17:14:27 +0800</pubDate>
       
       <guid>https://blog.alex4u.win/post/iperf3/</guid>
-      <description>iperf官网 点这里 服务端： #默认端口号5201 #默认TCP链接 #-p 指定端口号 #-b 指定带宽 #-u 指定UDP协议 iperf3 -s 客户端： #-i 输出间隔 #-t 持续时间 #-p 服务端端口号 #-P 并发连接数 iperf3 -c server-ip -i 10 -t 600 </description>
+      <description>iperf官网 点这里   服务端： #默认端口号5201 #默认TCP链接 #-p 指定端口号 #-b 指定带宽 #-u 指定UDP协议 iperf3 -s   客户端： #-i 输出间隔 #-t 持续时间 #-p 服务端端口号 #-P 并发连接数 iperf3 -c server-ip -i 10 -t 600   </description>
     </item>
     
   </channel>

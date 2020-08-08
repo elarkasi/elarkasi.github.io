@@ -17,7 +17,7 @@
       <pubDate>Mon, 20 Apr 2020 12:37:34 +0800</pubDate>
       
       <guid>https://blog.alex4u.win/post/uap-ac-offline-guest-forbid-policy/</guid>
-      <description>修改UAP安全策略，在AC下线后禁止Guest登录 # 查看当前UAP config.selfrun_guest_mode的配置 # 默认配置下 config.selfrun_guest_mode = pass，AC下线后允许未授权客户端接入 cat cfg/mgmt 修改该配置 # V5版本的AC controller配置文件路径 # &amp;lt;unifi_base&amp;gt;/data/sites/sitename/config.properties # 如果没有找到该文件，可以新建 echo &amp;#34;config.selfrun_guest_mode=off&amp;#34; &amp;gt; config.properties 保存退出，在管理页面下发配置 </description>
+      <description>  修改UAP安全策略，在AC下线后禁止Guest登录 # 查看当前UAP config.selfrun_guest_mode的配置 # 默认配置下 config.selfrun_guest_mode = pass，AC下线后允许未授权客户端接入 cat cfg/mgmt   修改该配置 # V5版本的AC controller配置文件路径 # &amp;lt;unifi_base&amp;gt;/data/sites/sitename/config.properties # 如果没有找到该文件，可以新建 echo &amp;#34;config.selfrun_guest_mode=off&amp;#34; &amp;gt; config.properties   保存退出，在管理页面下发配置   </description>
     </item>
     
   </channel>

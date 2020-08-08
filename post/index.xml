@@ -6,26 +6,10 @@
     <description>Recent content in Posts on 凭风欲上九重楼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 21 May 2020 12:57:25 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 12:37:34 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.alex4u.win/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>安装 Office2019</title>
-      <link>https://blog.alex4u.win/post/install-office2019/</link>
-      <pubDate>Thu, 21 May 2020 12:57:25 +0800</pubDate>
-      
-      <guid>https://blog.alex4u.win/post/install-office2019/</guid>
-      <description>Office 2019不再提供安装向导，现在自定义安装项需要利用配置文件和安装工具通过命令行安装
-准备工作   安装工具的下载地址 : 安装工具
-安装工具下载好了之后可以解压或者直接双击安装，它会释放一个可执行的程序Setup和示例配置文件(后缀是xml)，可以将所有示例配置文件删除，我们只需要用到配置页面生成的文件
-  定制配置文件 : 配置文件
-点击上面的连接，进入配置页，在页面下方点击创建新的配置，选择好你需要的安装项目和安装配置后，点击页面右上角导出按钮就可以保存一份配置好的Configuration.xml文件，将它放到和setup相同的文件夹内
-  开始安装 在powershell管理员模式下进入到setup文件目录
-1. 下载安装文件(如果你没有安装介质) .\setup.exe /download Configuration.xml 这个时候你就可以去撸个猫，泡个茶什么的,文件下载完成后powershell会回到当前目录，你可以dir看一下下载了哪些文件。如果你已经有了安装介质，比如一个ISO文件，你也可以加载或解压这个镜像文件，然后修改Configuration.xml中的SourcePath对应的目录，具体配置文件的内容可以参考安装工具页面的详细介绍
-2. 安装 .\setup.exe /configure Configuration.xml 完成后就可以激活office了，如果不知道怎么激活office,请阅读我的KMS激活介绍</description>
-    </item>
     
     <item>
       <title>关闭unifi AP未授权设备接入guest网络</title>
@@ -33,7 +17,7 @@
       <pubDate>Mon, 20 Apr 2020 12:37:34 +0800</pubDate>
       
       <guid>https://blog.alex4u.win/post/uap-ac-offline-guest-forbid-policy/</guid>
-      <description>修改UAP安全策略，在AC下线后禁止Guest登录 # 查看当前UAP config.selfrun_guest_mode的配置 # 默认配置下 config.selfrun_guest_mode = pass，AC下线后允许未授权客户端接入 cat cfg/mgmt 修改该配置 # V5版本的AC controller配置文件路径 # &amp;lt;unifi_base&amp;gt;/data/sites/sitename/config.properties # 如果没有找到该文件，可以新建 echo &amp;#34;config.selfrun_guest_mode=off&amp;#34; &amp;gt; config.properties 保存退出，在管理页面下发配置 </description>
+      <description>  修改UAP安全策略，在AC下线后禁止Guest登录 # 查看当前UAP config.selfrun_guest_mode的配置 # 默认配置下 config.selfrun_guest_mode = pass，AC下线后允许未授权客户端接入 cat cfg/mgmt   修改该配置 # V5版本的AC controller配置文件路径 # &amp;lt;unifi_base&amp;gt;/data/sites/sitename/config.properties # 如果没有找到该文件，可以新建 echo &amp;#34;config.selfrun_guest_mode=off&amp;#34; &amp;gt; config.properties   保存退出，在管理页面下发配置   </description>
     </item>
     
     <item>
@@ -42,7 +26,7 @@
       <pubDate>Sun, 19 Apr 2020 17:14:27 +0800</pubDate>
       
       <guid>https://blog.alex4u.win/post/iperf3/</guid>
-      <description>iperf官网 点这里 服务端： #默认端口号5201 #默认TCP链接 #-p 指定端口号 #-b 指定带宽 #-u 指定UDP协议 iperf3 -s 客户端： #-i 输出间隔 #-t 持续时间 #-p 服务端端口号 #-P 并发连接数 iperf3 -c server-ip -i 10 -t 600 </description>
+      <description>iperf官网 点这里   服务端： #默认端口号5201 #默认TCP链接 #-p 指定端口号 #-b 指定带宽 #-u 指定UDP协议 iperf3 -s   客户端： #-i 输出间隔 #-t 持续时间 #-p 服务端端口号 #-P 并发连接数 iperf3 -c server-ip -i 10 -t 600   </description>
     </item>
     
     <item>
@@ -60,10 +44,8 @@
       <pubDate>Sun, 19 Apr 2020 11:18:51 +0800</pubDate>
       
       <guid>https://blog.alex4u.win/post/kms-server/</guid>
-      <description>KMS server可以部署在不同的客户端上，比如NAS，手机，树莓派，电视盒子之类的设备，方便局域网内网激活使用。
-很简单的几条命令，用树莓派做例子
-# 拉取docker镜像 docker pull elarkasi/raspi-kms:latest # 运行 docker run -d -p 1688:1688 --restart=unless-stopped elarkasi/raspi-kms:latest 如需利用windows的自动激活功能，需要在路由器上加入以下配置
-# 替换hostname,domainname为现有设定 srv-host=_vlmcs._tcp.domainname,hostname.domainname,1688,0,100 不知道怎么使用KMS命令激活? 点这里</description>
+      <description> KMS server可以部署在不同的客户端上，比如NAS，手机，树莓派，电视盒子之类的设备，方便局域网内网激活使用。
+  很简单的几条命令，用树莓派做例子 # 拉取docker镜像 docker pull elarkasi/raspi-kms:latest # 运行 docker run -d -p 1688:1688 --restart=unless-stopped elarkasi/raspi-kms:latest   如需利用windows的自动激活功能，需要在路由器上加入以下配置 # 替换hostname,domainname为现有设定 srv-host=_vlmcs._tcp.domainname,hostname.domainname,1688,0,100   不知道怎么使用KMS命令激活? 点这里   </description>
     </item>
     
     <item>

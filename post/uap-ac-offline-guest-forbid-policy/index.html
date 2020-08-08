@@ -3,7 +3,7 @@
   <head>
     <title>关闭unifi AP未授权设备接入guest网络 // 凭风欲上九重楼</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.70.0" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="九重楼" />
     <meta name="description" content="" />
@@ -12,10 +12,10 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="关闭unifi AP未授权设备接入guest网络"/>
-<meta name="twitter:description" content="修改UAP安全策略，在AC下线后禁止Guest登录 # 查看当前UAP config.selfrun_guest_mode的配置 # 默认配置下 config.selfrun_guest_mode = pass，AC下线后允许未授权客户端接入 cat cfg/mgmt 修改该配置 # V5版本的AC controller配置文件路径 # &lt;unifi_base&gt;/data/sites/sitename/config.properties # 如果没有找到该文件，可以新建 echo &#34;config.selfrun_guest_mode=off&#34; &gt; config.properties 保存退出，在管理页面下发配置 "/>
+<meta name="twitter:description" content="  修改UAP安全策略，在AC下线后禁止Guest登录 # 查看当前UAP config.selfrun_guest_mode的配置 # 默认配置下 config.selfrun_guest_mode = pass，AC下线后允许未授权客户端接入 cat cfg/mgmt   修改该配置 # V5版本的AC controller配置文件路径 # &lt;unifi_base&gt;/data/sites/sitename/config.properties # 如果没有找到该文件，可以新建 echo &#34;config.selfrun_guest_mode=off&#34; &gt; config.properties   保存退出，在管理页面下发配置   "/>
 
     <meta property="og:title" content="关闭unifi AP未授权设备接入guest网络" />
-<meta property="og:description" content="修改UAP安全策略，在AC下线后禁止Guest登录 # 查看当前UAP config.selfrun_guest_mode的配置 # 默认配置下 config.selfrun_guest_mode = pass，AC下线后允许未授权客户端接入 cat cfg/mgmt 修改该配置 # V5版本的AC controller配置文件路径 # &lt;unifi_base&gt;/data/sites/sitename/config.properties # 如果没有找到该文件，可以新建 echo &#34;config.selfrun_guest_mode=off&#34; &gt; config.properties 保存退出，在管理页面下发配置 " />
+<meta property="og:description" content="  修改UAP安全策略，在AC下线后禁止Guest登录 # 查看当前UAP config.selfrun_guest_mode的配置 # 默认配置下 config.selfrun_guest_mode = pass，AC下线后允许未授权客户端接入 cat cfg/mgmt   修改该配置 # V5版本的AC controller配置文件路径 # &lt;unifi_base&gt;/data/sites/sitename/config.properties # 如果没有找到该文件，可以新建 echo &#34;config.selfrun_guest_mode=off&#34; &gt; config.properties   保存退出，在管理页面下发配置   " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.alex4u.win/post/uap-ac-offline-guest-forbid-policy/" />
 <meta property="article:published_time" content="2020-04-20T12:37:34+08:00" />
@@ -69,20 +69,28 @@
           <a class="tag" href="https://blog.alex4u.win/tags/unifi/">unifi</a></div></div>
     </header>
     <div class="post-content">
-      <h4 id="修改uap安全策略在ac下线后禁止guest登录">修改UAP安全策略，在AC下线后禁止Guest登录</h4>
+      <ul>
+<li>
+<h5 id="修改uap安全策略在ac下线后禁止guest登录">修改UAP安全策略，在AC下线后禁止Guest登录</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
 <span style="color:#75715e"># 查看当前UAP config.selfrun_guest_mode的配置</span>
 <span style="color:#75715e"># 默认配置下 config.selfrun_guest_mode = pass，AC下线后允许未授权客户端接入</span>
 cat cfg/mgmt
 
-</code></pre></div><h4 id="修改该配置">修改该配置</h4>
+</code></pre></div></li>
+<li>
+<h5 id="修改该配置">修改该配置</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
 <span style="color:#75715e"># V5版本的AC controller配置文件路径</span>
 <span style="color:#75715e"># &lt;unifi_base&gt;/data/sites/sitename/config.properties</span>
 <span style="color:#75715e"># 如果没有找到该文件，可以新建</span>
 echo <span style="color:#e6db74">&#34;config.selfrun_guest_mode=off&#34;</span> &gt; config.properties
 
-</code></pre></div><h4 id="保存退出在管理页面下发配置">保存退出，在管理页面下发配置</h4>
+</code></pre></div></li>
+<li>
+<h5 id="保存退出在管理页面下发配置">保存退出，在管理页面下发配置</h5>
+</li>
+</ul>
 
     </div>
     <div class="post-footer">
